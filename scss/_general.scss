@@ -1,0 +1,43 @@
+/* === General === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Hace que el footer se quede al fondo junto con el grid */
+html, body{
+    height: 100vh;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    /* por la estructura html misma no tengo que declarar areas */
+    color: #F1F0F3;
+    font-family: 'Playfair Display', serif;
+}
+main{
+    padding: 10px 2.5%;
+    background-color: #A06A4A;
+    overflow-y: auto;
+}
+h1, h2, h3{
+    /* Le doy sombras a títulos para que se vean más claros */
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    text-align: center;
+}
+
+// Para fijar elementos sin fijar
+// html, body{
+//     height: 100vh;
+// }
+// body{
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto 1fr auto;
+//     /* por la estructura html misma no tengo que declarar areas */
+//     color: #F1F0F3;
+//     font-family: 'Playfair Display', serif;
+// }
+// main{
+//     padding: 10px 2.5%;
+//     background-color: #A06A4A;
+//     overflow-y: auto;
+// }

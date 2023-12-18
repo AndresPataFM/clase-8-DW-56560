@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* === Minimal reset === */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+Paleta de colores
+*/
+/* === General === */
+/* Hace que el footer se quede al fondo junto con el grid */
+html, body {
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  /* por la estructura html misma no tengo que declarar areas */
+  color: #F1F0F3;
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  padding: 10px 2.5%;
+  background-color: #A06A4A;
+  overflow-y: auto;
+}
+
+h1, h2, h3 {
+  /* Le doy sombras a títulos para que se vean más claros */
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* === Header === */
+header {
+  background-color: #5D4035;
+  padding: 10px 2.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Toggle */
+}
+header img {
+  max-width: 160px;
+  width: 100%;
+}
+header .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+header .navigation button {
+  height: 36px;
+  width: 36px;
+  font-size: 32px;
+}
+header .navigation ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+header:focus-within ul {
+  display: flex;
+  flex-direction: column;
+}
+
+a:link, .navigation a:visited, .navigation a:active {
+  color: #F1F0F3;
+  text-decoration: none;
+}
+
+/* === Footer === */
+footer {
+  background-color: #5D4035;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* para dispositivos muy chicos esta el wrap */
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.multinediaHolder {
+  display: grid;
+  grid-template-columns: repeat(4, 78px);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+.multinediaHolder .multimediaIcon {
+  overflow: hidden;
+}
+.multinediaHolder .multimediaIcon a img {
+  width: 78px;
+  height: 78px;
+  border-radius: 25%;
+}
+
+/* === Index === */
+.desc {
+  text-align: center;
+  /* El padding va en dirección de las agujas del reloj */
+  padding: 5px 0 5px 0;
+}
+
+.productContainer {
+  background-color: #ce9466;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-auto-rows: minmax(400px, auto);
+  gap: 15px;
+  padding: 10px 10%;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.productCard {
+  /* Fijense como al no agregar border-box al reset tengo que calcular los pixeles del borde cuando quiero que sea de 300px de ancho */
+  max-width: 292px;
+  border: outset 4px rgb(40, 25, 21);
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #A06A4A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+  box-shadow: rgba(40, 25, 21, 0.8) 0px 2px 8px 0px;
+}
+
+.productImgHolder {
+  height: 180px;
+  overflow: hidden;
+  -o-object-position: center center;
+     object-position: center center;
+  border-bottom: #281915 outset 4px;
+}
+
+.productCard img {
+  max-width: 100%;
+  min-height: 100%; /* Deforma la imagen si no queda otra */
+}
+
+.productCountercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productCounter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.productCounter span {
+  border: #281915 outset 2px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ce9466;
+  color: #281915;
+}
+.productCounter span:first-child {
+  /* el border radious empieza desde la esquina superior izq en dirección de las agujas del reloj */
+  border-radius: 5px 0 0 5px;
+}
+.productCounter span:first-child:hover {
+  /* asi se utilizan varias pseudoclases */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.productCounter span:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.productCounter span:last-child:hover {
+  /* asi se utilizan varias pseudoclases */
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.productBuy {
+  background-color: #ce9466;
+  border-color: #281915;
+  border-radius: 5px;
+  padding: 2px 3px;
+  color: #F1F0F3;
+  font-weight: bold;
+}
+
+.productBuy:hover {
+  box-shadow: #F1F0F3 0px 0px 4px;
+  cursor: pointer;
+}
+
+/* == contacto == */
+.contactoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */

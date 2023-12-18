@@ -1,0 +1,92 @@
+/* === Index === */
+
+.desc{
+    text-align: center;
+    /* El padding va en dirección de las agujas del reloj */
+    padding: 5px 0 5px 0;
+    }
+    .productContainer{
+    background-color: #ce9466;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 15px;
+    padding: 10px 10%;
+    justify-content: center;
+    border-radius: 10px;
+    }
+    
+    .productCard{
+    /* Fijense como al no agregar border-box al reset tengo que calcular los pixeles del borde cuando quiero que sea de 300px de ancho */
+    max-width: 292px;
+    border: outset 4px rgba(40, 25, 21, 1);
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #A06A4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+    box-shadow: rgba(40, 25, 21, 0.8) 0px 2px 8px 0px;
+    }
+    .productImgHolder{
+    height: 180px;
+    overflow: hidden;
+    object-position: center center;
+    border-bottom: #281915 outset 4px;
+    }
+    .productCard img{
+    max-width: 100%;
+    min-height: 100%; /* Deforma la imagen si no queda otra */
+    }
+    .productCountercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .productCounter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    }
+    .productCounter span{
+        border: #281915 outset 2px;
+        width: 30px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        background-color: #ce9466;
+        color: #281915;
+        &:first-child{
+            /* el border radious empieza desde la esquina superior izq en dirección de las agujas del reloj */
+            border-radius: 5px 0 0 5px;
+            &:hover{
+                /* asi se utilizan varias pseudoclases */
+                transform: scale(1.1);
+                cursor: pointer;
+                }
+        }
+        &:last-child{
+            border-radius: 0 5px 5px 0;
+            &:hover{
+                /* asi se utilizan varias pseudoclases */
+                transform: scale(1.1);
+                cursor: pointer;
+                }
+        }
+}
+    
+.productBuy{
+    background-color: #ce9466;
+    border-color: #281915;
+    border-radius: 5px;
+    padding: 2px 3px;
+    color: #F1F0F3;
+    font-weight: bold;
+    }
+    .productBuy:hover{
+    box-shadow: #F1F0F3 0px 0px 4px;
+    cursor: pointer;
+    }
+    

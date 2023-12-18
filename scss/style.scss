@@ -1,0 +1,49 @@
+// General a especifico
+// traten de usar ' antes que " e iniciar con _ los archivos a importar
+@import './reset';
+@import './variables';
+@import './general';
+@import './headerFooter';
+@import './index';
+@import './contacto';
+
+// Ejemplos de clase
+// $fiesta: false;
+// $botones: (
+//   "success": green,
+//   "warning": rgb(165, 140, 0),
+//   "error": red,
+//   "violeta": blueviolet
+// );
+
+// div{
+//   height: 100px;
+//   width: 100px; 
+//   background-color: blue;
+//   &:hover{
+//     background-color: red;
+//   }
+// }
+
+// @each $nombre, $color in $botones{
+//   .boton-#{$nombre}{
+//     background-color: $color;
+//     text-align: center;
+//     font-size: 20px;
+//     padding: 5px;
+//     border-radius: 5%;
+//     color: beige;
+//   }
+// }
+
+
+// .div-divertido{
+//   @if $fiesta{
+//     background-color: pink;
+//   }
+//   @else {
+//     background-color: grey;
+//   }
+//   width: 100px;
+//   height: 100px;
+// }

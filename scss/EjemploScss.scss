@@ -1,0 +1,37 @@
+// Documentación
+
+//  https://sass-lang.com/documentation/
+
+// == Imports ==
+
+// General a especifico
+// traten de usar ' antes que " e iniciar con _ los archivos a importar
+
+@import './variables';
+
+// == Variables ==
+
+// Guardan los VALORES de una propiedad, NO guardan propiedad+valor
+
+// $nombreVariable: valor;
+$variable: 4px;
+
+// == Anidación ==
+
+section{
+    background-color: bisque;
+}
+section p{
+    text-align: center;
+    color: brown;
+}
+
+// es lo mismo que
+
+section{
+    background-color: bisque;
+    p{
+        text-align: center;
+        color: brown;
+    }
+}
