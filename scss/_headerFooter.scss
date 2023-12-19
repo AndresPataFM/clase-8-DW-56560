@@ -37,7 +37,9 @@ a:link, .navigation a:visited, .navigation a:active{
     }
 
 
-
+.activo a:link, .activo a:visited, .activo a:active{
+    color: yellow;
+}
 
 /* === Footer === */
 footer{

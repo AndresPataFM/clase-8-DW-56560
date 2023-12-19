@@ -8,7 +8,7 @@ Search engine optimization: optimización de motor de busqueda. Aumenta la visib
 ## Técnicas de SEO on-page
 
 ### Etiquetas meta
-* description: una descripción breve de la página entre 70-160 carácteres, de manera óptima de 155-160 (más carácteres no se terminan mostrando aunque acepta ahsta 320). En sí no afecta el SEO pero atrae a más usuarios.
+* description: una descripción breve de la página entre 70-160 carácteres, de manera óptima de 155-160 (más carácteres no se terminan mostrando aunque acepta hasta 320). En sí no afecta el SEO pero atrae a más usuarios.
 
 ```html
 <meta name="description" content=""> 
@@ -18,17 +18,22 @@ Search engine optimization: optimización de motor de busqueda. Aumenta la visib
 <meta name="keywords" content=""> 
 ```
 * favico: generar un favico para su sitio
+```html
+<link rel="shortcut icon" type="image/x-icon" href="link"/>
+```
+
 
 ### Buenas Prácticas
 * 1 h1 por .html, ni más ni menos.
 * 1-3 h2 por html.
-* Que ka etiqueta title sea relevante al html, muchas vexes se aplica la estructura "SitioWeb - Contenido". Se suelen preferir 35-65 carácteres.
+* Que la etiqueta title sea relevante al html, muchas vexes se aplica la estructura "SitioWeb - Contenido". Se suelen preferir 35-65 carácteres.
 * Atributos alt de imágenes. Sin esto no solo el motor de busqueda no puede entender de que son las imágenes sino que los no videntes no podran entender la página.
 * Buena navegación interna (que esten todos los html conectados de la mejor manera). Uso del rel="nofollow", rel="sponsored" y rel="ugc" (los rel no los evaluamos). Que los links externos se abran en una pestaña aparte y los internos en la misma pestaña (atributo target).
 * Aplicar nav en lugares que sean "centros de navegación" de su página, como menús de navegación.
 * Evita cantidad excesiva de carpetas en profundidad (más de 4-5 niveles)
 * Buen uso de etiquetas semánticas.
 * Minimizar la cantidad de clicks requeridas para navegar/realizar procesos.
+* Que las imágenes no lleguen a más de 3mb por html.
 
 
 ### Herramientas externas
@@ -53,7 +58,7 @@ Citando a un amigo mio, la desprolijidad de código lleva a lo siguiente:
 
 ## Hosting
 Además de google pages, utilicen uno de los siguientes:
-* [Filezilla+000webhost](https://docs.google.com/document/d/1Ve2nVq8xJtohinGj32lcG40woa2sqvfFDo1lYYR6rPk/edit): Es un link a una guía paso por paso
+* [Filezilla+000webhost](https://docs.google.com/document/d/1Ve2nVq8xJtohinGj32lcG40woa2sqvfFDo1lYYR6rPk/edit?usp=sharing): Es un link a una guía paso por paso
 * [Vercel](https://vercel.com/): linkeando un repo público a
 * [Netlify](https://www.netlify.com/)
 
